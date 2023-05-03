@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Models;
 using WebApi.Repositories;
@@ -84,24 +85,94 @@ namespace WebApi.Controllers
 
         }
 
-        [HttpPut("{int:id}")]
+        [HttpPut("{id:int}")]
 
         public IActionResult UpdateOneBook([FromRoute(Name ="id")] int id,
             [FromBody]Book book)
         {
-            var entity = _context
+            try
+            {
+                var entity = _context
                 .Books
                 .Where(x => x.Id == id)
                 .SingleOrDefault();
 
-            if(entity == null)
-                return NotFound();
+                if (entity == null)
+                    return NotFound();
 
-            if(id!= book.Id)
-                return BadRequest(); //400
+                if (id != book.Id)
+                    return BadRequest(); //400
 
-            _context.Books.Remove(entity);
-            _context.SaveChanges();
+                entity.Title = book.Title;
+                entity.Price = book.Price;
+
+                _context.SaveChanges();
+
+                return Ok(book);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id:int}")]
+        public IActionResult DeleteOneBook([FromRoute(Name ="id")] int id)
+        {
+            try
+            {
+               var entity=_context
+                    .Books
+                    .Where(b  => b.Id == id)
+                    .SingleOrDefault();
+
+                if (entity == null)
+                    return NotFound(new
+                    {
+                        StatusCode = 404,
+                        message=$"Book with id:{id} could not found"
+                    });
+                
+                _context.Books.Remove(entity);
+                _context.SaveChanges();
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
+           
+        }
+
+        [HttpPatch("{id:int}")]
+        public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id,
+            [FromBody] JsonPatchDocument<Book> bookPatch)
+        {
+            try
+            {
+                //check entity
+                var entity = _context
+                    .Books
+                    .Where(b => b.Id.Equals(id))
+                    .SingleOrDefault();
+
+                if (entity == null)
+                {
+                    return NotFound();
+                }
+
+                bookPatch.ApplyTo(entity);
+                _context.SaveChanges();
+                return NoContent(); //204
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
 
     }
