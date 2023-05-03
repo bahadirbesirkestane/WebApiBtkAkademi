@@ -89,3 +89,11 @@ C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\b
 C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Entities.dll
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Entities.pdb
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Repositories.dll
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Repositories.pdb
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Services.dll
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Services.pdb
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.dll
+C:\Users\O M E N\OneDrive - ogr.sakarya.edu.tr\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\Presentation.pdb
