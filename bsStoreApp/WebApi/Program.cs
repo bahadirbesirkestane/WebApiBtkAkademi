@@ -21,10 +21,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.ConfigureSqlContext(builder.Configuration);
-
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServicesManager();
 builder.Services.ConfigureLoggerService();
+builder.Services.AddAutoMapper(typeof(Program));
+
+
 
 var app = builder.Build();
 
