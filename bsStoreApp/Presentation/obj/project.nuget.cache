@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ApTnSaIHuEAXDNixMunDAaGmYp+zaZzUiUtE54i8oSXIE46IOTJ9arLhTNZHUlwBQ4YCZ4H4E8VpDoKv/VcbQw==",
+  "dgSpecHash": "ciTPaElOlIDivMz1ftdKj2EEOpmdCqBkwNlQJjNmALj1Oaf7PWQ87swhjKH8xiWHlfB5XkeHSRMLtVPAYsfO0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\O M E N\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\O M E N\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\O M E N\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\O M E N\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\O M E N\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\O M E N\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
