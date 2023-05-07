@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.Exceptions;
+using Entities.Models;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contrats;
@@ -39,64 +40,42 @@ namespace Presentation.Controllers
 
         public IActionResult GetAllBooks()
         {
-            try
-            {
-                var books = _manager
-                    .BookServices.GetAllBooks(false);
 
-                return Ok(books);
-            }
-            catch (Exception ex)
-            {
+            var books = _manager
+                .BookServices.GetAllBooks(false);
 
-                throw new Exception(ex.Message);
-            }
+            return Ok(books);
 
+
+ 
         }
 
         [HttpGet("{id:int}")]
         public IActionResult GetOneBook([FromRoute(Name = "id")] int id)
         {
-            try
-            {
-                var book = _manager
-                .BookServices
-                .GetOneBookById(id, false);
+            
+            var book = _manager
+            .BookServices
+            .GetOneBookById(id, false);
 
-                if (book == null)
-                {
-                    return NotFound();
-                }
+            
 
-                return Ok(book);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-
+            return Ok(book);
         }
 
         [HttpPost]
         public IActionResult CreateOneBook([FromBody] Book book)
         {
-            try
+
+            if (book == null)
             {
-                if (book == null)
-                {
-                    return BadRequest(); //400
-                }
-
-
-                _manager.BookServices.CreateOneBook(book);
-
-                return StatusCode(201, book);
+                return BadRequest(); //400
             }
-            catch (Exception ex)
-            {
 
-                throw new Exception(ex.Message);
-            }
+
+            _manager.BookServices.CreateOneBook(book);
+
+            return StatusCode(201, book);
 
         }
 
@@ -105,37 +84,22 @@ namespace Presentation.Controllers
         public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id,
             [FromBody] Book book)
         {
-            try
+            if (book is null)
             {
-                if (book is null)
-                {
-                    return BadRequest();
-                }
-
-                _manager.BookServices.UpdateOneBook(id, book, true);
-
-                return NoContent(); //204
+                return BadRequest();
             }
-            catch (Exception ex)
-            {
 
-                throw new Exception(ex.Message);
-            }
+            _manager.BookServices.UpdateOneBook(id, book, true);
+
+            return NoContent(); //204
         }
 
         [HttpDelete("{id:int}")]
         public IActionResult DeleteOneBook([FromRoute(Name = "id")] int id)
         {
-            try
-            {
-                _manager.BookServices.DeleteOneBook(id, false);
-                return NoContent();
-            }
-            catch (Exception ex)
-            {
 
-                throw new Exception(ex.Message);
-            }
+            _manager.BookServices.DeleteOneBook(id, false);
+            return NoContent();
 
         }
 
@@ -143,28 +107,16 @@ namespace Presentation.Controllers
         public IActionResult PartiallyUpdateOneBook([FromRoute(Name = "id")] int id,
             [FromBody] JsonPatchDocument<Book> bookPatch)
         {
-            try
-            {
-                //check entity
-                var entity = _manager
-                    .BookServices
-                    .GetOneBookById(id, true);
+            //check entity
+            var entity = _manager
+                .BookServices
+                .GetOneBookById(id, true);
 
-                if (entity == null)
-                {
-                    return NotFound();
-                }
 
-                bookPatch.ApplyTo(entity);
-                _manager.BookServices.UpdateOneBook(id, entity, true);
+            bookPatch.ApplyTo(entity);
+            _manager.BookServices.UpdateOneBook(id, entity, true);
 
-                return NoContent(); //204
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception(ex.Message);
-            }
+            return NoContent(); //204 
         }
 
     }
