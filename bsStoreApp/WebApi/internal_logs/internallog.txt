@@ -1,0 +1,6 @@
+2023-05-07 15:22:18.2517 Info Message Template Auto Format enabled
+2023-05-07 15:22:18.5768 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-07 15:22:18.6730 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\nlog.config
+2023-05-07 15:24:06.8977 Info Message Template Auto Format enabled
+2023-05-07 15:24:06.9797 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-05-07 15:24:07.0290 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\nlog.config

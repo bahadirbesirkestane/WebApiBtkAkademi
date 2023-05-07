@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J4uhttLkN9AolIQYaBBEwVcdK0nilS9TcM1sgsgqzEh3+x/bbWNSLjVrD33Kexl9JJIVmftSPXCqd5czQ8WDMw==",
+  "dgSpecHash": "iDLNjAdFcqOw9/yctzfCryxIPpEnf9YR02qv+abp7fPLSaUjWnzi0M8O+z6ktcwpbTH/ThNf3AF0TSdGMVUqKw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\O M E N\\OneDrive - ogr.sakarya.edu.tr\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Repositories\\Repositories.csproj",
+  "projectFilePath": "C:\\Users\\O M E N\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Repositories\\Repositories.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\O M E N\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.5\\microsoft.entityframeworkcore.7.0.5.nupkg.sha512",
     "C:\\Users\\O M E N\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.5\\microsoft.entityframeworkcore.abstractions.7.0.5.nupkg.sha512",

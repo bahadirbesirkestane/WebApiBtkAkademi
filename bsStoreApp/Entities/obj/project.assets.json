@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\O M E N\\OneDrive - ogr.sakarya.edu.tr\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\O M E N\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\O M E N\\OneDrive - ogr.sakarya.edu.tr\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\O M E N\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\O M E N\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\O M E N\\OneDrive - ogr.sakarya.edu.tr\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\O M E N\\Masaüstü\\Ogrenimler\\WebApiBtk\\basics\\bsStoreApp\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

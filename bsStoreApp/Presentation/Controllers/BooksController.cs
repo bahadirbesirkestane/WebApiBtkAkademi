@@ -90,7 +90,7 @@ namespace Presentation.Controllers
 
                 _manager.BookServices.CreateOneBook(book);
 
-                return StatusCode(200, book);
+                return StatusCode(201, book);
             }
             catch (Exception ex)
             {

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using NLog;
 using Presentation;
 using Repositories.EFCore;
 using WebApi.Extensions;
@@ -6,6 +7,7 @@ using WebApi.Extensions;
 var builder = WebApplication.CreateBuilder(args);
 
 
+LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
 
 // Add services to the container.
@@ -21,6 +23,7 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServicesManager();
+builder.Services.ConfigureLoggerService();
 
 var app = builder.Build();
 
