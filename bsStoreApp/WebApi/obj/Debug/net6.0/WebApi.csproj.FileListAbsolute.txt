@@ -199,3 +199,5 @@ C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\obj\De
 C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.pdb
 C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\obj\Debug\net6.0\WebApi.genruntimeconfig.cache
 C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\obj\Debug\net6.0\ref\WebApi.dll
+C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\O M E N\Masaüstü\Ogrenimler\WebApiBtk\basics\bsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
