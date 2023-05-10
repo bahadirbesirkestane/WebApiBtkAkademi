@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities.DataTransferObjects
+﻿namespace Entities.DataTransferObjects
 {
-    //record -- classlar açok benzer ve struct-
-    //-gibi referans tiplidir
-    public record BookDtoForUpdate(int Id,string Title,decimal Price);
+    public record BookDto
+    {
+        public int Id { get; set; }
+        public string Title { get; set; }
+        public decimal Price { get; set; }
+    }
+
+    //[Serializable]
+    //public record BookDto(int Id, string Title, decimal Price);
 
     // veya bu alttaki blok gibi de olur
     // burada init değilde hala set olarak kalırsa readonly olmaz
